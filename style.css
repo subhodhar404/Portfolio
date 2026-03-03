@@ -1,14 +1,271 @@
+/* global Variable */
+
+:root {
+    --brand: #00c6ff;
+    /* Primary accent color */
+    --brand2: #0072ff;
+    /* Secondary accent color */
+    --nav: rgba(73, 146, 112, .75);
+    /* Navbar background (semi-transparent) */
+    --text: #111;
+    /* Default text color */
+}
+
 body {
-    background-color: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    color: var(--text);
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+/* Navbar */
+.glass-nav {
+    background: var(--nav);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
+}
+
+
+.navbar .nav-link {
+    position: relative;
+    font-weight: 500;
+    opacity: .95;
+}
+
+.navbar .nav-link:hover {
+    opacity: 1;
+}
+
+.navbar .nav-link:not(.btn)::after {
+    content: "";
+    position: absolute;
+    left: .5rem;
+    right: .5rem;
+    bottom: .3rem;
+    height: 2px;
+    background: rgba(255, 255, 255, .8);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .25s;
+}
+
+.navbar .nav-link:not(.btn):hover::after {
+    transform: scaleX(1);
+}
+
+.btn-main {
+    background: var(--brand);
+    color: #fff;
+    padding: 10px 26px;
+    border-radius: 999px;
+    border: 0;
+    transition: .25s;
+}
+
+.btn-main:hover {
+    background: var(--brand2);
+    transform: translateY(-2px);
+    color: #fff;
 }
 
 h1 {
     color: #00ff88;
     font-size: 60px;
     font-family: Arial, sans-serif;
+}
+
+.header-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 45px;
+}
+
+.main-menu ul li a {
+    color: #000;
+    font-size: 18px;
+    font-family: "Gilroy-Bold";
+    display: block;
+    padding: 80px 0;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.main-menu ul li:hover>a {
+    color: #f05c6e;
+}
+
+.header-btn {
+    margin-left: 50px;
+    margin-top: 68px;
+}
+
+.header-btn a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    height: 48px;
+    padding: 0 35px;
+    border: 2px solid #f05c6e;
+    border-radius: 33px;
+    display: inline-block;
+    line-height: 48px;
+}
+
+.header-btn a:hover {
+    color: #fff;
+    background-color: #f05c6e;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.hero-section {
+    background-color: #dfe1e5;
+    height: 1080px;
+    width: 100%;
+    padding-top: 85px;
+}
+
+.home-content {
+    padding-top: 135px;
+}
+
+.btn.btn-primary {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 52px;
+    width: 164px;
+    margin-right: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.home-content img:not(:last-child) {
+    margin-right: 15px;
+}
+
+.hero-section {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* LEFT IMAGE */
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+}
+
+/* BADGES */
+.badge-box {
+    position: absolute;
+    background: #ffffff;
+    padding: 14px 18px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.badge-years {
+    top: 40px;
+    left: -30px;
+}
+
+.badge-projects {
+    bottom: 40px;
+    right: -20px;
+}
+
+.badge-box h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
+    color: #28a745;
+}
+
+.badge-projects h3 {
+    color: #7b2cbf;
+}
+
+.badge-box span {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.3;
+}
+
+/* RIGHT CONTENT */
+.hero-content small {
+    color: #ff4d1c;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 18px 0;
+    line-height: 1.3;
+}
+
+.hero-content p {
+    color: #777;
+    line-height: 1.8;
+    max-width: 480px;
+}
+
+.btn-hire {
+    background: #ff4d1c;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 32px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-hire:hover {
+    background: #e03e12;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .badge-years {
+        left: 10px;
+    }
+
+    .badge-projects {
+        right: 10px;
+    }
+
+    .hero-content p {
+        margin: 0 auto;
+    }
 }
