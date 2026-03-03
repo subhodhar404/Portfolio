@@ -71,201 +71,194 @@ body {
     color: #fff;
 }
 
-h1 {
-    color: #00ff88;
-    font-size: 60px;
-    font-family: Arial, sans-serif;
+.btn-round {
+    border-radius: 999px;
+    padding: 10px 22px;
 }
 
-.header-transparent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
 
-.main-menu ul li {
-    display: inline-block;
-    margin-left: 45px;
-}
-
-.main-menu ul li a {
-    color: #000;
-    font-size: 18px;
-    font-family: "Gilroy-Bold";
-    display: block;
-    padding: 80px 0;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.main-menu ul li:hover>a {
-    color: #f05c6e;
-}
-
-.header-btn {
-    margin-left: 50px;
-    margin-top: 68px;
-}
-
-.header-btn a {
-    color: #000;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-    height: 48px;
-    padding: 0 35px;
-    border: 2px solid #f05c6e;
-    border-radius: 33px;
-    display: inline-block;
-    line-height: 48px;
-}
-
-.header-btn a:hover {
+/* =====  Hero Section =================== */
+.hero {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
     color: #fff;
-    background-color: #f05c6e;
-}
-
-.f-left {
-    float: left;
-}
-
-.f-right {
-    float: right;
-}
-
-.hero-section {
-    background-color: #dfe1e5;
-    height: 1080px;
-    width: 100%;
-    padding-top: 85px;
-}
-
-.home-content {
-    padding-top: 135px;
-}
-
-.btn.btn-primary {
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 52px;
-    width: 164px;
-    margin-right: 15px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.home-content img:not(:last-child) {
-    margin-right: 15px;
-}
-
-.hero-section {
-    padding: 100px 0;
+    padding-top: 80px;
     position: relative;
-    overflow: hidden;
+
+    /* Animated gradient background */
+    background: linear-gradient(-45deg, #1f4037, #99f2c8, #0f2027, #2c5364);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
 }
 
-/* LEFT IMAGE */
-.hero-image {
-    position: relative;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 420px;
-    border-radius: 12px;
-}
-
-/* BADGES */
-.badge-box {
+.hero-overlay {
     position: absolute;
-    background: #ffffff;
-    padding: 14px 18px;
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    inset: 0;
+    background: rgba(0, 0, 0, .28);
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Small hero label (SOFTWARE ENGINEER) */
+.hero-kicker {
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: .9;
+}
+
+/* Hero subtitle width control */
+.hero-subtitle {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: .95;
+}
+
+/* Big hero name line-height */
+.hero-title {
+    line-height: 1.05;
+}
+
+
+/* Hero tech chips container */
+.hero-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 650px;
+}
+
+/* Tech chip style */
+.chip {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .14);
+    border: 1px solid rgba(255, 255, 255, .18);
+    color: rgba(255, 255, 255, .95);
+    font-weight: 600;
+    backdrop-filter: blur(6px);
+}
+
+/* Social links under hero buttons */
+.hero-social .social-link {
+    color: rgba(255, 255, 255, .85);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .18);
+    background: rgba(0, 0, 0, .10);
+    transition: .2s;
+}
+
+.hero-social .social-link:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Right-side hero glass card */
+.hero-card {
+    border-radius: 24px;
+    padding: 22px;
+    background: rgba(0, 0, 0, .18);
+    border: 1px solid rgba(255, 255, 255, .18);
+    backdrop-filter: blur(10px);
+}
+
+/* Top row inside hero card */
+.hero-card-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Big avatar circle (SD) */
+.avatar-lg {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    letter-spacing: .06em;
+    color: #fff;
+    background: rgba(255, 255, 255, .16);
+    border: 1px solid rgba(255, 255, 255, .22);
+}
+
+/* Stats grid inside hero card */
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+/* Each stat block */
+.stat {
+    padding: 14px 12px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .16);
     text-align: center;
 }
 
-.badge-years {
-    top: 40px;
-    left: -30px;
-}
-
-.badge-projects {
-    bottom: 40px;
-    right: -20px;
-}
-
-.badge-box h3 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 28px;
-    color: #28a745;
-}
-
-.badge-projects h3 {
-    color: #7b2cbf;
-}
-
-.badge-box span {
-    font-size: 13px;
-    color: #666;
-    line-height: 1.3;
-}
-
-/* RIGHT CONTENT */
-.hero-content small {
-    color: #ff4d1c;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.hero-content h1 {
-    font-size: 44px;
-    font-weight: 700;
-    margin: 18px 0;
-    line-height: 1.3;
-}
-
-.hero-content p {
-    color: #777;
-    line-height: 1.8;
-    max-width: 480px;
-}
-
-.btn-hire {
-    background: #ff4d1c;
+/* Stat title (Flutter/Go/SQL) */
+.stat-num {
     color: #fff;
-    border-radius: 50px;
-    padding: 12px 32px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+/* Stat label (Mobile UI, etc.) */
+.stat-label {
+    margin-top: 4px;
+    color: rgba(255, 255, 255, .75);
+    font-size: 13px;
     font-weight: 600;
-    border: none;
-    transition: 0.3s;
 }
 
-.btn-hire:hover {
-    background: #e03e12;
+/* Bottom note inside hero card */
+.hero-card-bottom {
+    padding: 16px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, .14);
+    border: 1px solid rgba(255, 255, 255, .12);
 }
 
-/* Responsive */
+/* “Scroll ↓” text under hero */
+.scroll-indicator {
+    opacity: .9;
+    font-size: 14px;
+    bottom: 1px;
+
+}
+
+/* Hero layout tweaks for tablet/mobile 
 @media (max-width: 991px) {
-    .hero-section {
-        text-align: center;
+
+    .hero-highlights,
+    .hero-chips {
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .badge-years {
-        left: 10px;
-    }
-
-    .badge-projects {
-        right: 10px;
-    }
-
-    .hero-content p {
+    .hero-card {
+        max-width: 520px;
         margin: 0 auto;
     }
 }
+*/
