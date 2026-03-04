@@ -103,7 +103,45 @@
   .edu-desc {
     font-size: 13px;
   }
+
+  /* Contact Section */
+
+  .contact-info {
+    margin-bottom: 25px;
+  }
+
+  .contact-item {
+    gap: 12px;
+  }
+
+  .contact-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .contact-item h6 {
+    font-size: 15px;
+  }
+
+  .contact-item p {
+    font-size: 13px;
+  }
+
+  .contact-form .form-control {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+  }
 }
+
+
+
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -168,6 +206,24 @@
   .edu-header h5 {
     font-size: 17px;
   }
+
+  /* Contact Section */
+
+
+  .contact-info {
+    margin-bottom: 30px;
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+
 
 }
 
@@ -243,6 +299,18 @@
   .hero-chips {
     justify-content: center;
   }
+
+
+  /* Contact Section */
+
+  .contact-form .form-control {
+    padding: 12px 14px;
+  }
+
+  .contact-icon {
+    width: 58px;
+    height: 58px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -262,6 +330,26 @@
   .edu-card {
     padding: 22px;
   }
+
+  /* Contact Section */
+
+  .contact-info {
+    margin-bottom: 35px;
+  }
+
+  .contact-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+  }
+
+  .contact-form .form-control {
+    padding: 11px 14px;
+  }
+
+  .hero-chips {
+    justify-content: center;
+  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
@@ -271,6 +359,13 @@
   .edu-timeline {
     max-width: 900px;
     margin: auto;
+  }
+
+  /* contact section */
+
+  .contact-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -282,5 +377,13 @@
   .edu-timeline {
     max-width: 950px;
     margin: auto;
+  }
+
+
+  /*contact section */
+
+  .contact-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 }
