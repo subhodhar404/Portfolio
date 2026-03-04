@@ -1,6 +1,9 @@
 /* // X-Small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
 
+
+  /* Hero Section */
+
   .hero-highlights,
   .hero-chips {
     margin-left: auto;
@@ -11,6 +14,7 @@
     max-width: 100%;
     margin: 0 auto;
   }
+
   .hero-kicker {
     text-align: left;
     padding-left: 10px;
@@ -18,39 +22,94 @@
   }
 
   .hero-title {
-    
+
     text-align: left;
     padding-left: 10px;
     padding-top: 5px;
-}
-.lead {
+  }
+
+  .lead {
     font-size: 16px;
     font-weight: 300;
-}
-  
+  }
 
 
-.about-badge{
-font-size:13px;
-padding:8px 16px;
-}
+  /* About Section */
 
-.section-title{
-font-size:28px;
-}
+  .about-badge {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
 
-.section-subtitle{
-font-size:14px;
-}
+  .section-title {
+    font-size: 28px;
+  }
 
-.about-avatar{
-width:55px;
-height:55px;
-}
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  .about-avatar {
+    width: 55px;
+    height: 55px;
+  }
+
+  /* Skills Section */
+
+  .skill-card {
+    padding: 18px;
+  }
+
+  .skill-chip {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .skill-card-title {
+    font-size: 16px;
+  }
+
+  /* education section */
+
+  .edu-timeline::before {
+    left: 18px;
+  }
+
+  .edu-item {
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .edu-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .edu-card {
+    padding: 16px;
+  }
+
+  .edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .edu-header h5 {
+    font-size: 16px;
+  }
+
+  .edu-desc {
+    font-size: 13px;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+  /* Hero Section */
 
   .hero-highlights,
   .hero-chips {
@@ -71,22 +130,52 @@ height:55px;
   }
 
   .hero-title {
-    
+
     text-align: left;
     padding-left: 40px;
     padding-top: 10px;
-}
+  }
 
 
+  /* About Section */
 
+  .section-title {
+    font-size: 30px;
+  }
 
-.section-title{
-font-size:30px;
-}
+  /* Skills Section */
+
+  .skill-chip {
+    font-size: 12px;
+  }
+
+  /* Education Section */
+
+  .edu-timeline::before {
+    left: 22px;
+  }
+
+  .edu-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+  }
+
+  .edu-card {
+    padding: 18px;
+  }
+
+  .edu-header h5 {
+    font-size: 17px;
+  }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  /* Hero Section */
+
 
   .hero-highlights,
   .hero-chips {
@@ -94,18 +183,18 @@ font-size:30px;
     margin-right: auto;
   }
 
-    .hero-kicker {
+  .hero-kicker {
     text-align: left;
     padding-left: 80px;
     padding-top: 40px;
   }
 
   .hero-title {
-    
+
     text-align: left;
     padding-left: 80px;
     padding-top: 10px;
-}
+  }
 
   .hero-chips {
     justify-content: center;
@@ -116,30 +205,82 @@ font-size:30px;
     margin: 0 auto;
   }
 
+  /* About Section */
+
+  .about-profile,
+  .about-card-advanced {
+    max-width: 720px;
+    margin: auto;
+  }
+
+  /* Skills Section */
+
+  .skills-track {
+    animation-duration: 25s;
+  }
+
+  /* Education Section */
 
 
-  
+  .edu-timeline {
+    max-width: 100%;
+  }
 
-.about-profile,
-.about-card-advanced{
-max-width:720px;
-margin:auto;
-}
+  .edu-timeline::before {
+    left: 26px;
+  }
+
+  .edu-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .edu-card {
+    padding: 20px;
+  }
+
+  .hero-chips {
+    justify-content: center;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-card-advanced{
-padding:24px;
-}
 
-.meta-label {
-  padding-right: 5px;
-}
+  /* About Section */
+  .about-card-advanced {
+    padding: 24px;
+  }
+
+  .meta-label {
+    padding-right: 5px;
+  }
+
+  /* Education Section */
+
+  .edu-card {
+    padding: 22px;
+  }
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+  /* education section */
+  .edu-timeline {
+    max-width: 900px;
+    margin: auto;
+  }
+}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+
+  /* education section */
+
+  .edu-timeline {
+    max-width: 950px;
+    margin: auto;
+  }
+}
