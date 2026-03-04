@@ -35,6 +35,11 @@ body {
     opacity: .95;
 }
 
+.navbar .nav-link.active{
+color:#fff !important;
+font-weight:600;
+}
+
 .navbar .nav-link:hover {
     opacity: 1;
 }
