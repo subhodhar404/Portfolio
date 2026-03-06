@@ -1,7 +1,5 @@
 /* // X-Small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
-
-
   /* Hero Section */
 
   .hero-highlights,
@@ -22,7 +20,6 @@
   }
 
   .hero-title {
-
     text-align: left;
     padding-left: 10px;
     padding-top: 5px;
@@ -32,7 +29,6 @@
     font-size: 16px;
     font-weight: 300;
   }
-
 
   /* About Section */
 
@@ -177,14 +173,8 @@
   }
 }
 
-
-
-
-
 /* // Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-
-
   /* Hero Section */
 
   .hero-highlights,
@@ -206,12 +196,10 @@
   }
 
   .hero-title {
-
     text-align: left;
     padding-left: 40px;
     padding-top: 10px;
   }
-
 
   /* About Section */
 
@@ -247,7 +235,6 @@
 
   /* Contact Section */
 
-
   .contact-info {
     margin-bottom: 30px;
   }
@@ -261,7 +248,6 @@
   .btn-submit {
     width: 100%;
   }
-
 
   /* projects section */
 
@@ -289,14 +275,11 @@
   .p-cbtn {
     opacity: 1;
   }
-
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
   /* Hero Section */
-
 
   .hero-highlights,
   .hero-chips {
@@ -311,7 +294,6 @@
   }
 
   .hero-title {
-
     text-align: left;
     padding-left: 80px;
     padding-top: 10px;
@@ -342,7 +324,6 @@
 
   /* Education Section */
 
-
   .edu-timeline {
     max-width: 100%;
   }
@@ -364,7 +345,6 @@
   .hero-chips {
     justify-content: center;
   }
-
 
   /* Contact Section */
 
@@ -394,7 +374,6 @@
 
 /* // Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
   /* About Section */
   .about-card-advanced {
     padding: 24px;
@@ -430,7 +409,6 @@
     justify-content: center;
   }
 
-
   /* projects section */
 
   .p-carousel .carousel-item img {
@@ -440,7 +418,6 @@
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-
   /* education section */
   .edu-timeline {
     max-width: 900px;
@@ -454,7 +431,6 @@
     padding-bottom: 80px;
   }
 
-
   /* projects section */
 
   .p-carousel .carousel-item img {
@@ -464,14 +440,12 @@
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
-
   /* education section */
 
   .edu-timeline {
     max-width: 950px;
     margin: auto;
   }
-
 
   /*contact section */
 
