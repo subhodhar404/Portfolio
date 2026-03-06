@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Subho Dhar | Software Engineer</title>
+    <title>Subho's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <title>Subho's Portfolio</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navmenu" data-bs-offset="90" tabindex="0">
@@ -29,6 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-sm btn-main px-3 ms-lg-2" href="#contact">Contact</a>
@@ -70,7 +70,7 @@
 
                     <!-- buttons -->
                     <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap">
-                        <a href="#contact" class="btn btn-main">View Projects</a>
+                        <a href="#projects" class="btn btn-main">View Projects</a>
                         <a href="#skills" class="btn btn-outline-light btn-round">View Skills</a>
                         <a href="#" class="btn btn-light btn-round">Download CV</a>
                     </div>
@@ -506,91 +506,326 @@
 
         <div class="container">
 
-            <div class="text-center mb-5 about-heading" data-aos="fade-up"">
+            <div class="text-center mb-5 about-heading" data-aos="fade-up">
 
                 <div class=" about-badge">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <span>Education</span>
-            </div>
-
-            <h2 class="section-title">Academic Journey</h2>
-            <p class="section-subtitle">My educational background and progress</p>
-
-        </div>
-
-
-        <div class="edu-timeline">
-
-            <!-- Diploma -->
-            <div class="edu-item" data-aos="fade-right">
-
-                <div class="edu-icon">
                     <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Education</span>
                 </div>
 
-                <div class="edu-card">
-
-                    <div class="edu-header">
-
-                        <h5>Diploma in Computer Science & Engineering</h5>
-
-                        <span class="edu-status completed">
-                            <i class="fa-solid fa-check-circle"></i> Completed
-                        </span>
-
-                    </div>
-
-                    <p class="edu-institute">
-                        Moulvibazar Polytechnic Institute, Moulvibazar
-                    </p>
-
-                    <p class="edu-desc">
-                        Built strong fundamentals in programming, problem solving,
-                        and computer engineering principles through hands-on projects.
-                    </p>
-
-                </div>
+                <h2 class="section-title">Academic Journey</h2>
+                <p class="section-subtitle">My educational background and progress</p>
 
             </div>
 
 
-            <!-- BSc -->
-            <div class="edu-item" data-aos="fade-left">
+            <div class="edu-timeline">
 
-                <div class="edu-icon">
-                    <i class="fa-solid fa-user-graduate"></i>
-                </div>
+                <!-- Diploma -->
+                <div class="edu-item" data-aos="fade-right">
 
-                <div class="edu-card">
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
 
-                    <div class="edu-header">
+                    <div class="edu-card">
 
-                        <h5>BSc in Computer Science & Engineering</h5>
+                        <div class="edu-header">
 
-                        <span class="edu-status running">
-                            <i class="fa-solid fa-hourglass-half"></i> Final Semester
-                        </span>
+                            <h5>Diploma in Computer Science & Engineering</h5>
+
+                            <span class="edu-status completed">
+                                <i class="fa-solid fa-check-circle"></i> Completed
+                            </span>
+
+                        </div>
+
+                        <p class="edu-institute">
+                            Moulvibazar Polytechnic Institute, Moulvibazar
+                        </p>
+
+                        <p class="edu-desc">
+                            Built strong fundamentals in programming, problem solving,
+                            and computer engineering principles through hands-on projects.
+                        </p>
 
                     </div>
 
-                    <p class="edu-institute">
-                        Metropolitan University, Sylhet
-                    </p>
+                </div>
 
-                    <p class="edu-desc">
-                        Currently completing advanced coursework in software engineering,
-                        systems design and modern development practices.
-                    </p>
+
+                <!-- BSc -->
+                <div class="edu-item" data-aos="fade-left">
+
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+
+                    <div class="edu-card">
+
+                        <div class="edu-header">
+
+                            <h5>BSc in Computer Science & Engineering</h5>
+
+                            <span class="edu-status running">
+                                <i class="fa-solid fa-hourglass-half"></i> Final Semester
+                            </span>
+
+                        </div>
+
+                        <p class="edu-institute">
+                            Metropolitan University, Sylhet
+                        </p>
+
+                        <p class="edu-desc">
+                            Currently completing advanced coursework in software engineering,
+                            systems design and modern development practices.
+                        </p>
+
+                    </div>
 
                 </div>
 
             </div>
-
-        </div>
 
         </div>
 
     </section>
+
+
+
+    <!-- ========= Projects Section ========= -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <!-- Section Heading -->
+            <div class="text-center mb-5 about-heading" data-aos="fade-up">
+
+
+                <div class="about-badge">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Projects</span>
+                </div>
+
+                <!-- Title -->
+                <h2 class="section-title">My Work in Action</h2>
+
+                <!-- Subtitle -->
+                <p class="section-subtitle">
+                    A collection of applications focused on performance, usability, and modern development practices.
+                </p>
+
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- ================= Card 1 ================= -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="p-card">
+
+                        <div class="p-media">
+                            <div id="proj1" class="carousel slide p-carousel" data-bs-touch="true"
+                                data-bs-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/card_1_1.avif" class="d-block w-100" alt="Shortly preview 1"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/card_1_2.avif" class="d-block w-100" alt="Shortly preview 2"
+                                            loading="lazy">
+                                    </div>
+                                </div>
+
+                                <!-- Hover controls -->
+                                <button class="carousel-control-prev p-cbtn" type="button" data-bs-target="#proj1"
+                                    data-bs-slide="prev" aria-label="Previous">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-control-next p-cbtn" type="button" data-bs-target="#proj1"
+                                    data-bs-slide="next" aria-label="Next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+                                <!-- Dots -->
+                                <div class="carousel-indicators p-dots">
+                                    <button type="button" data-bs-target="#proj1" data-bs-slide-to="0" class="active"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#proj1" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-body">
+                            <div class="p-top">
+                                <h3 class="p-name">Mood Tracker</h3>
+                                <span class="p-type">APP</span>
+                                <span class="p-type">Website</span>
+                            </div>
+
+                            <p class="p-desc">
+                                An AI-powered mental wellness app for mood tracking, journaling, meditation, and
+                                emotional insights.
+                            </p>
+
+                            <div class="p-tags">
+                                <span class="p-pill">Flutter</span>
+                                <span class="p-pill">Dart</span>
+                                <span class="p-pill">Firebase</span>
+                            </div>
+
+                            <div class="p-links">
+                                <a class="p-link" href="#" target="_blank" rel="noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a class="p-link" href="#" target="_blank" rel="noreferrer">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ================= Card 2 ================= -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="p-card">
+
+                        <div class="p-media">
+                            <div id="proj2" class="carousel slide p-carousel" data-bs-touch="true"
+                                data-bs-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/card_2_1.avif" class="d-block w-100" alt="Catalyst preview 1"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/card_2_2.avif" class="d-block w-100" alt="Catalyst preview 2"
+                                            loading="lazy">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev p-cbtn" type="button" data-bs-target="#proj2"
+                                    data-bs-slide="prev" aria-label="Previous">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-control-next p-cbtn" type="button" data-bs-target="#proj2"
+                                    data-bs-slide="next" aria-label="Next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+                                <div class="carousel-indicators p-dots">
+                                    <button type="button" data-bs-target="#proj2" data-bs-slide-to="0" class="active"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#proj2" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-body">
+                            <div class="p-top">
+                                <h3 class="p-name">E-Book and PDF Reader</h3>
+                                <span class="p-type">APP</span>
+                            </div>
+
+                            <p class="p-desc">
+                                A high-performance reading app supporting ePub and PDF, designed for digital libraries,
+                                subscription platforms, and online bookstores.
+                            </p>
+
+                            <div class="p-tags">
+                                <span class="p-pill">Flutter</span>
+                                <span class="p-pill">Dart</span>
+                                <span class="p-pill">Firebase</span>
+                            </div>
+
+                            <div class="p-links">
+                                <a class="p-link" href="#" target="_blank" rel="noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a class="p-link" href="#" target="_blank" rel="noreferrer">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ================= Card 3 ================= -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="p-card">
+
+                        <div class="p-media">
+                            <div id="proj3" class="carousel slide p-carousel" data-bs-touch="true"
+                                data-bs-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/home_movie.avif" class="d-block w-100"
+                                            alt="Movie app preview 1" loading="lazy">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/movie_2.avif" class="d-block w-100" alt="Movie app preview 2"
+                                            loading="lazy">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev p-cbtn" type="button" data-bs-target="#proj3"
+                                    data-bs-slide="prev" aria-label="Previous">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-control-next p-cbtn" type="button" data-bs-target="#proj3"
+                                    data-bs-slide="next" aria-label="Next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+                                <div class="carousel-indicators p-dots">
+                                    <button type="button" data-bs-target="#proj3" data-bs-slide-to="0" class="active"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#proj3" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-body">
+                            <div class="p-top">
+                                <h3 class="p-name">MovieDB</h3>
+                                <span class="p-type">App</span>
+                            </div>
+
+                            <p class="p-desc">
+                                A cinema app featuring intuitive browsing and comprehensive movie details with a smooth, modern user experience.
+                            </p>
+
+                            <div class="p-tags">
+                                <span class="p-pill">Flutter</span>
+                                <span class="p-pill">Dart</span>
+                                <span class="p-pill">Firebase</span>
+                            </div>
+
+                            <div class="p-links">
+                                <a class="p-link" href="#" target="_blank" rel="noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a class="p-link" href="#" target="_blank" rel="noreferrer">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
 
     <!-- ================= CONTACT ================= -->

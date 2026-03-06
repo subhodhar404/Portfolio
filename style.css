@@ -160,25 +160,25 @@ body {
 /* Social links under hero buttons */
 
 
-.social-icon{
-width:60px;
-height:60px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:24px;
-color:#fff;
-border-radius:50%;
-border:2px solid rgba(255,255,255,.25);
-background:transparent;
-transition:.3s;
-text-decoration:none;
+.social-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .25);
+    background: transparent;
+    transition: .3s;
+    text-decoration: none;
 }
 
-.social-icon:hover{
-background:rgba(255,255,255,.12);
-transform:translateY(-4px);
-color:#fff;
+.social-icon:hover {
+    background: rgba(255, 255, 255, .12);
+    transform: translateY(-4px);
+    color: #fff;
 }
 
 /* Right-side hero glass card */
@@ -314,7 +314,7 @@ color:#fff;
 
 .about-section {
     position: relative;
-    background: linear-gradient(180deg, #f7fbfb 0%, #eaf4f4 100%);
+     background: linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%);
 }
 
 /* Profile Card */
@@ -460,7 +460,7 @@ color:#fff;
 /* ============== Skills Section ==================*/
 
 .skills-section {
-    background: linear-gradient(180deg, #f7fbfb 0%, #eef6f6 100%);
+    background: linear-gradient(180deg, #f7f8ff 0%, #eef0ff 100%);
 }
 
 /* Card */
@@ -656,7 +656,7 @@ color:#fff;
 /* ================= Contact Section ================= */
 
 .contact-section {
-    background: #f8fbfc;
+    background: #fafcf8;
 }
 
 /* Contact info container */
@@ -776,4 +776,170 @@ color:#fff;
 
 .footer-social a:hover {
     color: #fff;
+}
+
+/* ================= Projects Section ================= */
+
+.projects {
+    --accent: var(--brand);
+    --accent2: var(--brand2);
+    --border: rgba(0, 0, 0, .08);
+    --text: #0f172a;
+    --muted: #64748b;
+
+    padding: 75px 0;
+    background: linear-gradient(180deg, #f7fbfb 0%, #eef6f6 100%);
+    color: var(--text);
+}
+
+.projects-head {
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+
+.p-card {
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--border);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .06);
+    transition: .25s;
+}
+
+.p-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 45px rgba(0, 0, 0, .10);
+}
+
+
+.p-media {
+    padding: 16px;
+    background: #f6fafb;
+}
+
+.p-carousel {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.p-carousel .carousel-item img {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.p-cbtn {
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 999px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.p-carousel:hover .p-cbtn {
+    opacity: 1;
+}
+
+.p-cbtn i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.p-dots {
+    margin: 0;
+    bottom: 10px;
+}
+
+.p-dots [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, .25);
+    border: 0;
+}
+
+.p-dots .active {
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
+
+
+.p-body {
+    padding: 20px 20px 16px;
+}
+
+.p-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.p-name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.45rem;
+}
+
+.p-type {
+    font-size: .78rem;
+    padding: .26rem .65rem;
+    border-radius: 999px;
+    background: rgba(0, 198, 255, .12);
+    border: 1px solid rgba(0, 198, 255, .25);
+    color: #0b7c86;
+    font-weight: 600;
+}
+
+.p-desc {
+    color: var(--muted);
+    margin: 0 0 14px;
+    line-height: 1.6;
+}
+
+.p-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+
+.p-pill {
+    font-size: .85rem;
+    padding: .40rem .70rem;
+    border-radius: 999px;
+    background: #f2f6ff;
+    border: 1px solid rgba(0, 114, 255, .18);
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* links */
+.p-links {
+    display: flex;
+    gap: 18px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, .06);
+}
+
+.p-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #112a0f;
+    transition: .2s;
+}
+
+.p-link:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.p-link i {
+    color: var(--accent2);
 }
